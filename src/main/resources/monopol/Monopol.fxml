@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="monopol.MonopolController">
+   <children>
+      <SplitPane dividerPositions="0.7" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label fx:id="propertyDisplay" layoutX="23.0" layoutY="26.0" prefHeight="225.0" prefWidth="125.0" style="-fx-background-color: lightgray;" />
+                  <GridPane fx:id="gridPane" gridLinesVisible="true" layoutX="174.0" layoutY="13.0" maxHeight="250.0" maxWidth="250.0" minHeight="250.0" minWidth="250.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="71.0" prefWidth="125.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="2" />
+                        <Pane fx:id="street4" opacity="0.4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: purple;" GridPane.rowIndex="1" />
+                        <Pane fx:id="street1" opacity="0.5" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Pane fx:id="street2" opacity="0.5" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Pane fx:id="street3" opacity="0.4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: Purple;" GridPane.rowIndex="2" />
+                        <Pane fx:id="street5" opacity="0.64" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: Orange;" GridPane.columnIndex="1" />
+                        <Pane fx:id="street6" opacity="0.64" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="2" />
+                        <Pane fx:id="street7" opacity="0.54" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightGreen;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Pane fx:id="street8" opacity="0.54" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightGreen;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Pane fx:id="go" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightGrey;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                           <children>
+                              <Text layoutX="13.0" layoutY="37.0" rotate="315.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.5" text="GO!" wrappingWidth="36.48024368286133">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="release" prefHeight="200.0" prefWidth="62.0" style="-fx-background-color: lightGrey;" GridPane.rowIndex="3">
+                           <children>
+                              <Text layoutX="2.0" layoutY="24.0" rotate="45.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.5" text="JAIL RELEASE" textAlignment="CENTER" wrappingWidth="63.33333333333326">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="tax" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightGrey;">
+                           <children>
+                              <Text layoutX="13.0" layoutY="21.0" rotate="315.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.5" text="PAY TAX" wrappingWidth="46.717500545502844">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="jail" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightGrey;" GridPane.columnIndex="3">
+                           <children>
+                              <Text layoutX="3.0" layoutY="29.0" rotate="45.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.5" text="GO TO JAIL" textAlignment="CENTER" wrappingWidth="55.447873336435805">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                  </GridPane>
+                  <StackPane layoutX="174.0" layoutY="13.0" prefHeight="250.0" prefWidth="250.0">
+                     <children>
+                        <Circle fx:id="player1" fill="#ff2121" radius="8.0" stroke="BLACK" strokeType="INSIDE" translateX="77.0" translateY="96.0" />
+                        <Circle fx:id="player2" fill="#55ff71" radius="8.0" stroke="BLACK" strokeType="INSIDE" translateX="103.0" translateY="96.0" />
+                        <StackPane fx:id="bars" maxHeight="60.0" maxWidth="63.3" prefHeight="80.0" prefWidth="100.0" translateX="95.0" translateY="-95.0">
+                           <children>
+                              <Line endX="40.0" endY="-60.0" startX="40.0" strokeWidth="1.5">
+                                 <StackPane.margin>
+                                    <Insets right="35.0" />
+                                 </StackPane.margin></Line>
+                              <Line endX="10.0" endY="-58.0" startX="10.0" strokeWidth="1.5">
+                                 <StackPane.margin>
+                                    <Insets left="35.0" />
+                                 </StackPane.margin>
+                              </Line>
+                              <Line endX="10.0" endY="-60.0" startX="10.0" strokeWidth="1.5" />
+                              <Line endX="40.0" endY="-60.0" startX="100.0" startY="-60.0" strokeWidth="3.0">
+                                 <StackPane.margin>
+                                    <Insets right="2.0" top="57.0" />
+                                 </StackPane.margin>
+                              </Line>
+                              <Line endX="40.0" endY="-60.0" startX="100.0" startY="-60.0" strokeWidth="3.0">
+                                 <StackPane.margin>
+                                    <Insets bottom="60.0" right="2.0" />
+                                 </StackPane.margin>
+                              </Line>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </StackPane>
+                  <Pane layoutX="236.5" layoutY="73.5" prefHeight="130.0" prefWidth="124.0" style="-fx-background-color: lightBlue;">
+                     <children>
+                        <Text fill="#2e4d69" layoutX="-1.0" layoutY="79.0" rotate="315.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.5" text="MINIPOL" textAlignment="CENTER" wrappingWidth="125.33333333333337">
+                           <font>
+                              <Font name="Impact" size="36.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Button fx:id="buy" layoutX="48.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleBuy" prefHeight="25.0" prefWidth="75.0" text="Buy" />
+                  <ImageView fx:id="IconMain" fitHeight="88.0" fitWidth="91.0" layoutX="505.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@IconTrans.png" />
+                     </image>
+                  </ImageView>
+                  <Pane fx:id="gameoverDisplay" layoutX="-1.0" layoutY="-1.0" prefHeight="277.0" prefWidth="602.0" style="-fx-background-color: black;" visible="false">
+                     <children>
+                        <Text fill="WHITE" layoutX="76.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GAME OVER" textAlignment="CENTER" wrappingWidth="444.4420524656339">
+                           <font>
+                              <Font name="System Bold" size="75.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="startNewGame" layoutX="243.0" layoutY="190.0" mnemonicParsing="false" onAction="#handleNewGame" text="Start New Game" textAlignment="CENTER" />
+                     </children>
+                  </Pane>
+                  <Text layoutX="36.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Property:" />
+                  <Button fx:id="endGameButton" layoutX="506.0" layoutY="141.0" mnemonicParsing="false" onAction="#endGame" prefWidth="80.0" style="-fx-background-color: indianred; -fx-border-color: Gray;" text="End Game" visible="false" />
+                  <Button fx:id="saveGame" layoutX="506.0" layoutY="108.0" mnemonicParsing="false" onAction="#saveToFile" prefWidth="80.0" style="-fx-background-color: lightGreen; -fx-border-color: Gray;" text="Save Game" visible="false" />
+                  <Label fx:id="dice" alignment="CENTER" contentDisplay="CENTER" layoutX="436.0" layoutY="108.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+                     <font>
+                        <Font size="41.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="dropDown" layoutX="529.0" layoutY="30.0" mnemonicParsing="false" onAction="#saveEndVisible" prefHeight="27.0" prefWidth="33.0" style="-fx-background-color: black; -fx-cursor: hand;" text="▼" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="saveMessage" layoutX="500.0" layoutY="173.0" prefHeight="36.0" prefWidth="91.0" textAlignment="CENTER" textFill="#568d35" />
+                  <Label fx:id="computerDisp" alignment="TOP_LEFT" layoutX="429.0" layoutY="211.0" prefHeight="57.0" prefWidth="164.0" />
+                  <Text layoutX="429.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Other player" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="move" layoutX="48.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleDice" text="Throw dice" textAlignment="CENTER" />
+                  <Button fx:id="endTurn" layoutX="48.0" layoutY="75.0" mnemonicParsing="false" onAction="#handleEndTurn" prefHeight="25.0" prefWidth="76.5" text="End Turn" textAlignment="CENTER" />
+                  <Label fx:id="terminal" alignment="TOP_LEFT" layoutX="174.0" layoutY="14.0" prefHeight="88.0" prefWidth="184.0" style="-fx-border-color: lightGray;" />
+                  <Label fx:id="playerDisplay" alignment="TOP_LEFT" layoutX="361.0" layoutY="48.0" prefHeight="57.0" prefWidth="112.0" />
+                  <Text layoutX="364.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Player:" wrappingWidth="125.33333333333337">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="currentPlayerDisplay" layoutX="361.0" layoutY="27.0" prefHeight="19.0" prefWidth="105.0" />
+                  <Label fx:id="playerPropertiesDisplay" alignment="TOP_LEFT" layoutX="448.0" layoutY="28.0" prefHeight="88.0" prefWidth="148.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Pane fx:id="startUpDisplay" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white; -fx-border-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="startGame" alignment="CENTER" layoutX="264.0" layoutY="278.0" mnemonicParsing="false" onAction="#handleStartGame" text="Start Game" />
+            <TextField fx:id="player1input" layoutX="123.0" layoutY="231.0" promptText="Player 1" />
+            <TextField fx:id="player2input" layoutX="333.0" layoutY="231.0" promptText="Player 2" />
+            <Label fx:id="errorMessage" layoutX="128.0" layoutY="341.0" prefHeight="45.0" prefWidth="343.0" textAlignment="CENTER" textFill="#e62121" />
+            <ImageView fx:id="IconMain1" fitHeight="147.0" fitWidth="138.0" layoutX="236.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@IconTrans.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="197.0" layoutY="195.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="MINIPOL">
+               <font>
+                  <Font name="Impact" size="65.0" />
+               </font>
+            </Text>
+            <Button fx:id="loadGame" layoutX="264.0" layoutY="311.0" mnemonicParsing="false" onAction="#loadFromFile" text="Load Game" />
+            <ToggleButton fx:id="CPUbutton" layoutX="485.0" layoutY="231.0" mnemonicParsing="false" onAction="#computerPlayerToggle" style="-fx-border-color: navy;" text="CPU">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </ToggleButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -26,3 +26,6 @@ Jeg ville prøve å lage et spill, og valgte å lage en mini-versjon av monopol:
 
 Hadde prosjektet i andre semester og det var mitt andre IT fag noensinne, og første basert på prosjektarbeid. 
 Jeg jobbet mye med det og ble veldig stolt, selv om jeg nå vet det kan gjøres mye mer effektivt og bedre. 
+
+<img src="images\Minipolindex.png" width="300" title="Start Window"/>
+<img src="images\MinipolSpill.png" width="300" title="Game start"/>

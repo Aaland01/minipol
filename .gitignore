@@ -1,0 +1,17 @@
+target/classes/module-info.class
+target/classes/monopol/Icon.png
+target/classes/monopol/IFsaveGame.class
+target/classes/monopol/Monopol.class
+target/classes/monopol/MonopolApp.class
+target/classes/monopol/MonopolController.class
+target/classes/monopol/MonopolController$1.class
+target/classes/monopol/MonopolController$2.class
+target/classes/monopol/Player.class
+target/classes/monopol/Property.class
+target/classes/monopol/SaveGame.class
+target/test-classes/monopol/MonopolTest.class
+target/test-classes/monopol/PlayerTest.class
+target/test-classes/monopol/PropertyTest.class
+target/test-classes/monopol/SaveGameTest.class
+target/classes/monopol/IconTrans.png
+target/classes/monopol/Monopol.fxml

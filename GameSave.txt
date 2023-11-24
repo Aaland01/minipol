@@ -1,0 +1,12 @@
+Save
+Spiller,Håkon,1,580,4
+Spiller,Computer,2,420,9
+0
+Realfagsbygget,11,800,160,null,
+Hovedbygget,10,700,140,null,
+IT-bygget,8,600,120,null,
+EL-huset,7,500,100,2
+Gamle Kjemi,5,400,80,1
+Gamle Fysikk,4,300,60,null,
+Kjelhuset,2,200,40,null,
+Stripa,1,100,20,2
