@@ -1,15 +1,15 @@
 # minipol
 
-Prosjekt i emne Objektorientert Programmering (TDT4100)
+Prosjekt i emne Objektorientert Programmering (TDT4100) - Våren 2022
 
 ## Beskrivelse
 
-Dette prosjektet var en del av mappevurderingen i emnet. 
+Dette prosjektet var en del av mappevurderingen i emnet, og var midt første reelle programmeringsprosjekt.
 Det baserte seg på å lage en javafx-app, ved hjelp av Java, fxml og scenebuilder
 
-Jeg ville prøve å lage et spill, og valgte å lage en mini-versjon av monopol:
+Jeg valgte å lage en mini-versjon av monopol:
 - To spillere (lokalt eller mot dataspiller)
-- En terning som kastes hver runde, flytter seg antall felt
+- En terning som må kastes hver runde, flytter seg antall felt
 - 12 felt totalt, hvor 8 av dem er kjøpbare eiendommer/gater
 - Passerer du start mottar du 200kr
 - Lander du på Tax-felt, blir du tvunget til å betale 100kr. Erstatter klassiske "gratis parkering" feltet
